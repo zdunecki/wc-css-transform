@@ -1,6 +1,16 @@
 {
   "name": "wc-css-transform",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "Transform CSS for web components with PostCSS plugin support",
+  "keywords": [
+    "css",
+    "web-components",
+    "postcss",
+    "transform",
+    "shadow-dom",
+    "css-transform",
+    "wc"
+  ],
   "public": true,
   "type": "module",
   "exports": {
