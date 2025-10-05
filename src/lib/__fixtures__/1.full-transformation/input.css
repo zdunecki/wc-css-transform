@@ -1,0 +1,77 @@
+:host {
+  color: var(--heading-color);
+  line-height: var(--line-height-xlarge);
+  font-weight: var(--font-weight-semibold);
+  position: relative;
+  display: table;
+  margin: 0;
+  padding: 0 24px 0 0;
+  scroll-margin-top: 30px;
+  cursor: default;
+}
+
+:host([id]) {
+  cursor: pointer;
+}
+
+:host([noanchor="true"]) {
+  cursor: default;
+}
+
+:host([label="true"]) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+:host(:hover) svg {
+  opacity: 1;
+}
+
+:host([kind="muted"]) {
+  color: var(--heading-color--muted);
+  cursor: default;
+  font-weight: var(--font-weight-medium);
+}
+
+:host([size="1"]) {
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-2xl);
+}
+
+:host([size="2"]) {
+  font-size: var(--font-size-xxlarge);
+  line-height: var(--line-height-xxlarge);
+}
+
+:host([size="3"]) {
+  font-size: var(--font-size-xlarge);
+  line-height: var(--line-height-xlarge);
+}
+
+:host([size="4"]) {
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-large);
+}
+
+:host([size="5"]) {
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-medium);
+}
+
+:host([size="6"]) {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+:host [part="icon"] {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -6px;
+  opacity: 0;
+}
+
+:host([active="true"]) [part="icon"] {
+  opacity: 1;
+}

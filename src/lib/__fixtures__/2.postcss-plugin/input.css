@@ -1,0 +1,17 @@
+:host {
+  color: var(--heading-color);
+  line-height: var(--line-height-xlarge);
+  font-weight: var(--font-weight-semibold);
+}
+
+:host([id]) {
+  cursor: pointer;
+}
+
+:host([size="2"]) {
+  font-size: 24px;
+}
+
+[active] {
+  opacity: 1;
+}
